@@ -4,14 +4,14 @@
       <h1 class="title has-text-centered">Typing Challenge</h1>
 
       <p class="has-text-centered">
-        {{ramdomText}}
+        <span [class]="compare(letter,enteredText[i])" *ngFor="let letter of ramdomText.split('');let i =index">{{letter}}</span>
       </p>
 
       <div class="field">
         <input type="text" class="input" (input)="onInput($event)">
       </div>
 
-      <div class="box has-text-centered" *ngIf="showSuccess && enteredText === ramdomText">
+      <div class="box has-text-centered has-background-primary-dark" *ngIf="showSuccess && enteredText === ramdomText">
         <h1 class="title">Success!</h1>
       </div>
     </div>

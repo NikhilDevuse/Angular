@@ -18,4 +18,11 @@ export class AppComponent {
       this.showSuccess = true;
     }
   }
+
+  compare(randomLetter: string, enteredLetter: string) {
+    if (!enteredLetter) {
+      return 'pending';
+    }
+    return randomLetter === enteredLetter ? 'correct' : 'incorrect';
+  }
 }
