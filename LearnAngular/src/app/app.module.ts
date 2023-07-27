@@ -3,17 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngulartemplentsyntaxComponent } from './angulartemplentsyntax/angulartemplentsyntax.component';
-import { BuildingcomponentsComponent } from './buildingcomponents/buildingcomponents.component';
-import { ExcersicesComponent } from './excersices/excersices.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
-      AngulartemplentsyntaxComponent,
-      BuildingcomponentsComponent,
-      ExcersicesComponent
-   ],
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule
