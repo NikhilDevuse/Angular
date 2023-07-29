@@ -4,12 +4,14 @@ import { AngulartemplentsyntaxComponent } from './angulartemplentsyntax/angulart
 import { BuildingcomponentsComponent } from './buildingcomponents/buildingcomponents.component';
 import { RouterModule } from '@angular/router';
 import { courseContentChildren } from "./course-content.routing";
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
   declarations: [
     AngulartemplentsyntaxComponent,
-    BuildingcomponentsComponent
+    BuildingcomponentsComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
