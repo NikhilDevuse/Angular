@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { AngulartemplentsyntaxComponent } from './angulartemplentsyntax/angulartemplentsyntax.component';
 import { BuildingcomponentsComponent } from './buildingcomponents/buildingcomponents.component';
+import { MasteringpipesComponent } from './masteringpipes/masteringpipes.component';
 
 export const courseContentChildren: Routes = [
   {
@@ -13,6 +14,10 @@ export const courseContentChildren: Routes = [
       {
         path: 'buildingcomponents',
         component: BuildingcomponentsComponent
+      },
+      {
+        path: 'masteringpipes',
+        component: MasteringpipesComponent
       }
     ]
   }

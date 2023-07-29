@@ -5,17 +5,23 @@ import { BuildingcomponentsComponent } from './buildingcomponents/buildingcompon
 import { RouterModule } from '@angular/router';
 import { courseContentChildren } from "./course-content.routing";
 import { CardComponent } from './card/card.component';
+import { MasteringpipesComponent } from './masteringpipes/masteringpipes.component';
+import { ConvertPipe } from '../common/pipes/convert.pipe';
+import { SharedcommonModule } from '../common/sharedcommon.module';
 
 
 @NgModule({
   declarations: [
     AngulartemplentsyntaxComponent,
     BuildingcomponentsComponent,
-    CardComponent
+    CardComponent,
+    MasteringpipesComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(courseContentChildren),
-  ]
+    SharedcommonModule
+  ],
+  providers: [ConvertPipe]
 })
 export class CourseContentModule { }
