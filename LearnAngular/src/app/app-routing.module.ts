@@ -7,8 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./course-content/course-content.module').then(m => m.CourseContentModule)
   },
   {
-    path: 'excersices',
-    loadChildren: () => import('./excersices/excersices.module').then(m => m.ExcersicesModule)
+    path: 'exercises',
+    loadChildren: () => import('./exercises/exercises.module').then(m => m.ExercisesModule)
   }
 ];
 
