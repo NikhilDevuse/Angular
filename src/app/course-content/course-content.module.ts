@@ -8,6 +8,8 @@ import { CardComponent } from './card/card.component';
 import { MasteringpipesComponent } from './masteringpipes/masteringpipes.component';
 import { ConvertPipe } from '../common/pipes/convert.pipe';
 import { SharedcommonModule } from '../common/sharedcommon.module';
+import { DirectivesangularComponent } from './directivesangular/directivesangular.component';
+import { ClassDirective } from '../common/directives/class.directive';
 
 
 @NgModule({
@@ -15,13 +17,14 @@ import { SharedcommonModule } from '../common/sharedcommon.module';
     AngulartemplentsyntaxComponent,
     BuildingcomponentsComponent,
     CardComponent,
-    MasteringpipesComponent
+    MasteringpipesComponent,
+    DirectivesangularComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(courseContentChildren),
     SharedcommonModule
   ],
-  providers: [ConvertPipe]
+  providers: []
 })
 export class CourseContentModule { }
