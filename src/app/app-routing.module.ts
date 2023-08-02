@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'exercises',
     loadChildren: () => import('./exercises/exercises.module').then(m => m.ExercisesModule)
+  },
+  {
+    path: '',
+    loadChildren: () => import('./common/sharedcommon.module').then(m => m.SharedcommonModule)
   }
 ];
 

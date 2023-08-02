@@ -12,9 +12,9 @@ import { CompsModule } from './comps/comps.module';
   ],
   imports: [
     BrowserModule,
+    CompsModule,
     AppRoutingModule,
-    SharedcommonModule,
-    CompsModule
+    SharedcommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
