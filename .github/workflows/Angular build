@@ -3,8 +3,12 @@ name: Build and Test Angular
 on:
   push:
     branches: [ comps ]
+    paths-ignore:
+      - '.github/**'
   pull_request:
     branches: [ comps ]
+    paths-ignore:
+      - '.github/**'
 
 jobs:
   build:
