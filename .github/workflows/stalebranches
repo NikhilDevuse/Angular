@@ -1,0 +1,24 @@
+name: Close stale branches
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # runs every day at midnight
+
+jobs:
+
+  close-stale-branches:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Close stale branches
+      uses: guo-yu/close-stale-branches@v0.1.6
+      with:
+        days-before-stale: 60 
+        days-before-close: 14
+        prune-strategy: prune
+        exclude-branches: |
+          development
+          archive
