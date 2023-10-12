@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModsHomeComponent implements OnInit {
   modalOpen = false;
-  constructor() {}
+  items: any = [
+    { title: 'Who are you?', content: 'I am ME!' },
+    { title: 'Who is ME?', content: 'He is me' },
+    { title: 'Than, Who are you?', content: 'I am IDIOT🤷🏻‍♀️' },
+  ]
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onClick() {
     this.modalOpen = !this.modalOpen;
